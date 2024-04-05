@@ -1,6 +1,8 @@
 'use client';
 import Image from "next/image";
-import bgMobile from "./../../public/static/images/pattern-bg-mobile.png"
+import bgMobile from "./../../public/static/images/pattern-bg-mobile.png";
+import bgDesktop from "./../../public/static/images/pattern-bg-desktop.png";
+import MapDisplay from "./mapdisplay";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
       {/* bg image visible in mobile view */}
       <Image src={bgMobile} />
       <section id="mapDisplay">
-        {/* put interactive map here */}
+        <MapDisplay />
       </section>
     </section>
     <main id="searchSection">
