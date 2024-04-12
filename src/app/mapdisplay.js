@@ -5,22 +5,6 @@ import locationArrow from './../../public/static/images/icon-location.svg';
 import * as L from 'leaflet';
 import 'leaflet-defaulticon-compatibility';
 
-// delete L.Icon.Default.prototype._getIconUrl;
-// L.Icon.Default.mergeOptions({
-//     iconUrl: locationArrow,
-//     iconRetinaUrl: locationArrow,
-// })
-
-// const arrowIcon = new L.Icon({
-//     iconUrl: locationArrow,
-//     iconRetinaUrl: locationArrow,
-//     iconSize: [32,32],
-//     shadowSize: [50,64],
-//     iconAnchor: [22,94],
-//     shadowAnchor: [4,62],
-//     popupAnchor: [-3,-76],
-// });
-
 
 export default function MapDisplay() {
     return(

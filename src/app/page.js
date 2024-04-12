@@ -10,13 +10,19 @@ export default function Home() {
     <section id="background" className="absolute top-0 h-screen w-full -z-10">
       {/* bg image visible in mobile view */}
       <Image src={bgMobile} />
-      <section id="mapDisplay">
+      <section id="mapDisplay" className="h-[55vh]">
         <MapDisplay />
       </section>
     </section>
     <main id="searchSection">
-      <h1>IP Address Tracker</h1>
-      <input />
+      <div className="w-full flex flex-col justify-center  items-center h-[20vh]">
+        <h1 className="text-white text-2xl">IP Address Tracker</h1>
+        <div id="inputContainer" className="flex">
+          <input className="text-3xl" />
+          <button>aa</button>
+        </div>
+      </div>
+      
       <section id="ipDetails">
         {/* put details for ip address here */}
       </section>
